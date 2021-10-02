@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include "axxb_utils.h"
 #include <fstream>
+namespace axxb {
 
 Pose ConventionalAXXBSVDSolver::SolveX()
 {
@@ -36,3 +37,4 @@ Pose ConventionalAXXBSVDSolver::SolveX()
   handeyetransformation.topRightCorner(3,1) = x.block<3,1>(9,0);
   return handeyetransformation;
 }
+} // namespace axxb

@@ -8,6 +8,7 @@
 #include<fstream>
 #include<cmath>
 #include"axxb_utils.h"
+namespace axxb {
 
 Pose ExtendedAXXBEliLambdaSVDSolver::SolveX()
 {
@@ -52,3 +53,4 @@ Pose ExtendedAXXBEliLambdaSVDSolver::SolveX()
   handeyetransformation.topRightCorner(3,1) = svd.matrixV().block<3,1>(9,11)/alpha;
   return handeyetransformation;
 }
+} // namespace axxb

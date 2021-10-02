@@ -7,6 +7,8 @@
 #include <Eigen/QR>
 #include <stdlib.h>
 
+namespace axxb {
+
 Pose AndreffExtendedAXXBSolver::SolveX()
 {
   Eigen::MatrixXd m = Eigen::MatrixXd::Zero(9*A_.size(),9);
@@ -61,3 +63,5 @@ Pose AndreffExtendedAXXBSolver::SolveX()
 
   return handeyetransformation;
 }
+
+} // namespace axxb

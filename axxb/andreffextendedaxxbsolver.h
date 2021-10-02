@@ -2,6 +2,9 @@
 #define ANDREFFEXTENDEDAXXBSOLVER_H
 
 #include "axxbsolver.h"
+
+namespace axxb {
+
 class AndreffExtendedAXXBSolver:public AXXBSolver
 {
 public:
@@ -10,3 +13,5 @@ public:
 };
 
 #endif // ANDREFFEXTENDEDAXXBSOLVER_H
+
+} // namespace axxb

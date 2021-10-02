@@ -4,6 +4,7 @@
 #include<Eigen/Core>
 #include"type.h"
 #include<glog/logging.h>
+namespace axxb {
 
 //used for hand eye calibration
 class AXXBSolver
@@ -21,5 +22,5 @@ public:
   Poses A_;
   Poses B_;
 };
-
+} // namespace axxb
 #endif // AXXBSOLVER_H

@@ -1,5 +1,7 @@
 #include "axxb_utils.h"
 
+namespace axxb {
+
 Eigen::Matrix3d skew(Eigen::Vector3d u)
 {
   Eigen::Matrix3d u_hat = Eigen::MatrixXd::Zero(3,3);
@@ -12,3 +14,5 @@ Eigen::Matrix3d skew(Eigen::Vector3d u)
 
   return u_hat;
 }
+
+} // namespace axxb
